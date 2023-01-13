@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+        long long int  n,flag=0;
+    cin>>n;
+    long long int arr[n];
+    for(long long int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+        if(i+1!=arr[i])
+        {
+            flag++;
+        }
+    }
+    
+  
+    if(flag>2)
+    {
+        cout<<"NO";
+    }
+    else
+        {
+            cout<<"YES";
+        }
+
+    return 0;
+}
